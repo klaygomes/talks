@@ -1,0 +1,62 @@
+{
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.18.0",
+  "scripts": {
+    "build": "pnpm -r run --workspace-concurrency=-1 build",
+    "clean": "rm -rf dist && rm -rf slides-export",
+    "dev": "node .scripts/select-deck.ts dev --open",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "check:deps": "depcheck"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.4",
+    "@tsparticles/engine": "^3.9.1",
+    "@tsparticles/slim": "^3.9.1",
+    "@unovis/vue": "1.4.3-beta.0",
+    "cobe": "^0.6.5",
+    "seedrandom": "^3.0.5",
+    "slidev-addon-inalia": "^0.2.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^5.4.1",
+    "@iconify-json/devicon": "^1.2.45",
+    "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/logos": "^1.2.9",
+    "@iconify-json/lucide": "^1.2.68",
+    "@iconify-json/noto": "^1.2.7",
+    "@iconify-json/ph": "^1.2.2",
+    "@iconify-json/simple-icons": "^1.2.53",
+    "@iconify-json/vscode-icons": "^1.2.31",
+    "@slidev/cli": "52.1.0",
+    "@slidev/theme-default": "^0.25.0",
+    "@types/node": "^24.6.2",
+    "@types/prompts": "^2.4.9",
+    "@unocss/eslint-plugin": "^66.5.2",
+    "depcheck": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.37.0",
+    "execa": "^9.6.0",
+    "fdir": "^6.5.0",
+    "ofetch": "^1.4.1",
+    "openai": "^6.5.0",
+    "pathe": "^2.0.3",
+    "playwright-chromium": "^1.55.1",
+    "prettier": "^3.6.2",
+    "prompts": "^2.4.2",
+    "slidev-addon-graph": "^1.0.0",
+    "slidev-theme-personal": "link:./theme",
+    "taze": "^19.7.0",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@latest"
+    },
+    "patchedDependencies": {
+      "cobe": "patches/cobe.patch",
+      "slidev-addon-graph": "patches/slidev-addon-graph.patch"
+    }
+  }
+}
