@@ -37,10 +37,10 @@ Acronyms and casing
 - Don’t expand acronyms unless the speaker expands them.
 
 Language
-- Talks are only in English or French.
-- A single talk will not mix English and French.
-- If audio contains any language other than English or French, treat that as a transcription issue: do not attempt to transcribe or translate it; insert [inaudible] for segments in another language or when language is clearly not English/French.
-- If it's unclear whether a segment is English or French, mark it [inaudible] rather than guessing.
+- Talks are only in English or Portuguese.
+- A single talk will not mix English and Portuguese.
+- If audio contains any language other than English or Portuguese, treat that as a transcription issue: do not attempt to transcribe or translate it; insert [inaudible] for segments in another language or when language is clearly not English/Portuguese.
+- If it's unclear whether a segment is English or Portuguese, mark it [inaudible] rather than guessing.
 
 Foreign words and names
 - Keep as spoken; do not translate. Add accents if obvious from context.
